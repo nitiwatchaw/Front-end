@@ -1,0 +1,3459 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="" type="png">
+  <script src="https://kit.fontawesome.com/5f24f44feb.js" crossorigin="anonymous"></script>
+
+  <!-- Animatione Style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono:wght@100&display=swap">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Dancing+Script&family=Quicksand&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="css/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Swiper -->
+
+  <link href="css/base.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+  <title>Front-end test</title>
+
+</head>
+
+<body>
+  <header>
+
+    <nav>
+      <section-1>
+        <div class="bar-menu-icon">
+          <i class="fa-solid fa-bars menu-bar-open" id="btn-menu-open" onclick="disableScroll()"></i>
+        </div>
+        <div class="wrapper-nav-content">
+
+          <!-- logo -->
+          <a href="#" class="logo-img"><img src="./img/header/Logo.png" alt=""></a>
+
+
+          <div class="wrapper-btn-account">
+
+            <!-- search -->
+            <div class="wrapper-search">
+              <div class="search-section">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    All Categories
+                    <img src="./img/header/li_chevron-down.png" alt="">
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+                <form action="">
+                  <input type="search" placeholder="Search for items...">
+                </form>
+              </div>
+              <button>
+                <div class="icon-search">
+                  <img src="./img/header/li_search.png" alt="" class="search-btn">
+                </div>
+              </button>
+            </div>
+
+            <div class="wrapper-btn-profile">
+              <!-- btn -->
+              <div class="wrapper-cart-fav">
+                <!-- fav -->
+                <div class="fav-btn">
+                  <a href="#"><img src="./img/header/Group 1.png" alt=""></a>
+                  <a href="#">
+                    <p>Wishlist</p>
+                  </a>
+                  <p class="number-notification">4</p>
+                </div>
+
+                <!-- cart -->
+                <div class="cart-btn">
+                  <a href="#"><img src="./img/header/Group 2.png" alt=""></a>
+                  <p class="number-notification-cart">1</p>
+                  <div class="wrapper-cart">
+                    <a href="#">
+                      <p>my cart</p>
+                    </a>
+                    <a href="#">
+                      <p>$21</p>
+                    </a>
+
+                  </div>
+                  <div class="dropdown">
+                    <a class="btn dropdown-toggle dropdown-cart" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <img src="./img/header/li_chevron-down.png" alt="" class="dropdown-cart-img">
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Account -->
+              <div class="profile">
+                <img src="./img/header/Ellipse 2.png" alt="">
+                <p>Ramzi Cherif</p>
+                <div class="dropdown">
+                  <a class="btn dropdown-toggle dropdown-profile" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="./img/header/li_chevron-down.png" alt="">
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section-1>
+      <section-2>
+
+
+
+        <div class="wrapper-menu-bar" id="navigation">
+          <i class="fa-solid fa-xmark menu-bar-close" id="btn-menu-close" onclick="enableScroll()"></i>
+          <!-- button -->
+          <div class="btn-cate">
+            <button>
+              <img src="./img/header/li_layout-grid.png" alt="">
+              <p>Brows All Categories</p>
+            </button>
+          </div>
+          <!-- list -->
+          <ul>
+            <li><a href="#">
+                <img src="./img/header/Frame.png" alt="">
+                <p>Home</p>
+              </a>
+            </li>
+            <li><a href="#">
+                <div class="img-fff"></div>
+                <p>Hot deals</p>
+              </a>
+            </li>
+            <li><a href="#">
+                <div class="img-fff-3"></div>
+                <p>Promotions</p>
+              </a>
+            </li>
+            <li><a href="#">
+                <div class="img-fff-4"></div>
+                <p>New products</p>
+              </a>
+            </li>
+
+          </ul>
+
+          <!-- info -->
+          <div class="tel-phone">
+            <div class="wrapper-phone">
+              <img src="./img/header/Iconly/Light-Outline/Call.png" alt="">
+              <a href="#">1233-777</a>
+            </div>
+            <p>24/7 support center</p>
+          </div>
+        </div>
+      </section-2>
+    </nav>
+
+
+
+  </header>
+  <main>
+
+    <div class="container-fluid mt-3">
+      <!-- slide -->
+      <div class="row mb-5">
+        <div class="col-12 pe-0 ps-0 slide-display">
+
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner slide-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-12 bd-green-1 bg-vet-pattern">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="content-slide">
+                          <p>Don't miss our daily amazing deals</p>
+                          <p>Save up to 60% off on your first order</p>
+                          <div class="wrapper-search-slide">
+                            <form class="form-slide">
+                              <img src="./img/body/banner/li_send.png" alt="" class="img-send">
+                              <input type="search" placeholder="Enter your email address">
+                              <button>Subcribe</button>
+                            </form>
+                          </div>
+                        </div>
+                        <img src="./img/body/banner/Hreo-img.png" class="d-block w-100 slide-pic-tablet" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-12 bd-green-1 bg-vet-pattern">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="content-slide">
+                          <p>Don't miss our daily amazing deals</p>
+                          <p>Save up to 60% off on your first order</p>
+                          <div class="wrapper-search-slide">
+                            <form class="form-slide">
+                              <img src="./img/body/banner/li_send.png" alt="" class="img-send">
+                              <input type="search" placeholder="Enter your email address">
+                              <button>Subcribe</button>
+                            </form>
+                          </div>
+                        </div>
+                        <img src="./img/body/banner/Hreo-img.png" class="d-block w-100 slide-pic-tablet" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-12 bd-green-1 bg-vet-pattern">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="content-slide">
+                          <p>Don't miss our daily amazing deals</p>
+                          <p>Save up to 60% off on your first order</p>
+                          <div class="wrapper-search-slide">
+                            <form class="form-slide">
+                              <img src="./img/body/banner/li_send.png" alt="" class="img-send">
+                              <input type="search" placeholder="Enter your email address">
+                              <button>Subcribe</button>
+                            </form>
+                          </div>
+                        </div>
+                        <img src="./img/body/banner/Hreo-img.png" class="d-block w-100 slide-pic-tablet" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- menu-lst -->
+      <div class="row align-items-center row-adjust-padding justify-content-between">
+        <div class="col-12 col-xl-4 topic-cate">
+          <p>Explore Categories</p>
+        </div>
+        <div class="col-12 col-xl-7 list-cate ">
+          <ul class="list-product">
+            <li><a href="#" class="active">All</a></li>
+            <li><a href="#">Vegetables</a></li>
+            <li><a href="#">Fruits</a></li>
+            <li><a href="#">Coffe & teas</a></li>
+            <li><a href="#">Meat</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- selection cate-->
+      <div class="row align-items-center mb-5">
+        <div class="col col-ad">
+          <div class="swiper swiper-horizontal">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item peach">
+                  <img src="./img/body/image 3.png" alt="">
+                  <p class="text-center">Peach</p>
+                  <p class="text-center">20 items</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item vetgetable">
+                  <img src="./img/body/image 4.png" alt="">
+                  <p class="text-center">Vegetable</p>
+                  <p class="text-center">220 items</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item strawberry">
+                  <img src="./img/body/image 5.png" alt="">
+                  <p class="text-center">Strawberry</p>
+                  <p class="text-center">10 items</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item apple">
+                  <img src="./img/body/image 6.png" alt="">
+                  <p class="text-center">Apple</p>
+                  <p class="text-center">40 items</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item orange">
+                  <img src="./img/body/image 7.png" alt="">
+                  <p class="text-center">Orange</p>
+                  <p class="text-center">23 items</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item Potato">
+                  <img src="./img/body/image 8.png" alt="">
+                  <p class="text-center">Potato</p>
+                  <p class="text-center">3 items</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item Carrot">
+                  <img src="./img/body/image 9.png" alt="">
+                  <p class="text-center">Carrot</p>
+                  <p class="text-center">9 items</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item na">
+                  <img src="./img/body/Offer1-img.png" alt="">
+                  <p class="text-center">N/A</p>
+                  <p class="text-center">0 item</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+      </div>
+      <!-- Product-lst -->
+      <div class="row align-items-center row-adjust-padding justify-content-between">
+        <div class="col-12  col-xl-4  topic-feat">
+          <p>Featured Products</p>
+        </div>
+        <div class="col-12 col-xl-7 list-prod">
+          <ul class="list-product">
+            <li><a href="#">All</a></li>
+            <li><a href="#" class="active">Vegetables</a></li>
+            <li><a href="#">Fruits</a></li>
+            <li><a href="#">Coffe & teas</a></li>
+            <li><a href="#">Meat</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!-- selection prod-->
+      <div class="row">
+        <div class="col-12 col-selection-prod-adjust">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <!-- page1 -->
+              <div class="carousel-item active">
+
+                <div class="card-wrapper">
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-4.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetable</p>
+                      <p class="text-center">Redish 500g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$2</p>
+                          <p>$3.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-5.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Potato 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1</p>
+                          <p>$1.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="card-wrapper-tablet">
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-4.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetable</p>
+                      <p class="text-center">Redish 500g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$2</p>
+                          <p>$3.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-5.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Potato 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1</p>
+                          <p>$1.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-6.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Fruits</p>
+                      <p class="text-center">Tomatos 200g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$0.30</p>
+                          <p>$0.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-wrapper-laptop">
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-4.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetable</p>
+                      <p class="text-center">Redish 500g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$2</p>
+                          <p>$3.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-5.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Potato 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1</p>
+                          <p>$1.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-6.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Fruits</p>
+                      <p class="text-center">Tomatos 200g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$0.30</p>
+                          <p>$0.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-7.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Broccoli 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1.50</p>
+                          <p>$2.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-wrapper-pc">
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-4.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetable</p>
+                      <p class="text-center">Redish 500g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$2</p>
+                          <p>$3.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-5.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Potato 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1</p>
+                          <p>$1.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-6.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Fruits</p>
+                      <p class="text-center">Tomatos 200g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$0.30</p>
+                          <p>$0.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-7.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Broccoli 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1.50</p>
+                          <p>$2.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-8.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetable</p>
+                      <p>Green Beans 250g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1</p>
+                          <p>$1.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- page2 -->
+              <div class="carousel-item">
+
+                <div class="card-wrapper">
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-6.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Fruits</p>
+                      <p class="text-center">Tomatos 200g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$0.30</p>
+                          <p>$0.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-7.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Broccoli 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1.50</p>
+                          <p>$2.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="card-wrapper-tablet">
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-7.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Broccoli 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1.50</p>
+                          <p>$2.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-8.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetable</p>
+                      <p>Green Beans 250g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1</p>
+                          <p>$1.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-5.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Potato 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1</p>
+                          <p>$1.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-wrapper-laptop">
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-7.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Broccoli 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1.50</p>
+                          <p>$2.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-5.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Potato 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1</p>
+                          <p>$1.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-4.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetable</p>
+                      <p class="text-center">Redish 500g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$2</p>
+                          <p>$3.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-6.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Fruits</p>
+                      <p class="text-center">Tomatos 200g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$0.30</p>
+                          <p>$0.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-wrapper-pc">
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-5.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Potato 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1</p>
+                          <p>$1.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-5.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Potato 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1</p>
+                          <p>$1.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-6.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Fruits</p>
+                      <p class="text-center">Tomatos 200g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$0.30</p>
+                          <p>$0.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-7.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Broccoli 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1.50</p>
+                          <p>$2.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-8.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetable</p>
+                      <p>Green Beans 250g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1</p>
+                          <p>$1.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- page3 -->
+              <div class="carousel-item">
+                <div class="card-wrapper">
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-8.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetable</p>
+                      <p>Green Beans 250g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1</p>
+                          <p>$1.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-5.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Potato 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1</p>
+                          <p>$1.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="card-wrapper-tablet">
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-4.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetable</p>
+                      <p class="text-center">Redish 500g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$2</p>
+                          <p>$3.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-5.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Potato 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1</p>
+                          <p>$1.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-6.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Fruits</p>
+                      <p class="text-center">Tomatos 200g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$0.30</p>
+                          <p>$0.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-wrapper-laptop">
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-7.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Broccoli 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1.50</p>
+                          <p>$2.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-5.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Potato 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1</p>
+                          <p>$1.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-4.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetable</p>
+                      <p class="text-center">Redish 500g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$2</p>
+                          <p>$3.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-6.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Fruits</p>
+                      <p class="text-center">Tomatos 200g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$0.30</p>
+                          <p>$0.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-wrapper-pc">
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-5.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Potato 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1</p>
+                          <p>$1.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-5.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Potato 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1</p>
+                          <p>$1.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-6.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Fruits</p>
+                      <p class="text-center">Tomatos 200g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$0.30</p>
+                          <p>$0.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-7.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetables</p>
+                      <p class="text-center">Broccoli 1kg</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1.50</p>
+                          <p>$2.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-prod ">
+                    <img src="./img/body/Rectangle 19-8.png" alt="">
+                    <div class="content-wrapper">
+                      <p class="text-center">Vegetable</p>
+                      <p>Green Beans 250g</p>
+                      <div class="img-star">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                        <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                        <p>(4)</p>
+                      </div>
+                      <div class="text-person-wrapper">
+                        <p>By</p>
+                        <p>Mr.food</p>
+                      </div>
+                      <div class="wrapper-pay">
+                        <div class="text-cost-wrapper">
+                          <p>$1</p>
+                          <p>$1.99</p>
+                        </div>
+                        <button>
+                          <img src="./img/body/li_shopping-cart.png" alt="">
+                          <p>Add</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Offer -->
+      <div class="row mt-5">
+        <div class="col-12 col-xl-6 bd-yellow bg-vet-pattern">
+          <div class="row">
+            <div class="col-12">
+
+              <div class="wrapper-content-yellow">
+                <button>Free delivery</button>
+                <p class="topic">Free delivery over $50</p>
+                <p class="subtopic">Shop $50 product and get free delivery anywhere.</p>
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+              <img src="./img/body/Offer1-img.png" alt="" class="img-for-mobile-1">
+            </div>
+            <div class="col-12">
+              <img src="./img/body/Offer1-img.png" alt="" class="img-for-tablet">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12  col-xl-6 bd-green-2 bg-vet-pattern">
+          <div class="row">
+            <div class="col-12">
+              <div class="wrapper-content-green">
+                <div class="wrapper-green-without-btn">
+                  <button> 60% off</button>
+                  <p class="topic">Organic Food</p>
+                  <p class="subtopic">Save up to 60% off on your first order</p>
+                </div>
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                <img src="./img/body/Offer2-img.png" alt="" class="img-for-mobile-2">
+              </div>
+
+            </div>
+            <div class="col-12">
+              <img src="./img/body/Offer2-img.png" alt="" class="img-for-tablet">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- best selles -->
+      <div class="row mt-5 row-adjust-padding">
+        <div class="col-12 align-self-center col-xl-3 topic-bestsell">
+          <p>Daily Best Sells</p>
+        </div>
+        <div class="col-12 col-xl-9 list-bestsell">
+
+          <div class="wrapper-line-adjust">
+            <ul class="list-product">
+              <li><a href="#" class="active">Featured</a></li>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">New</a></li>
+              <div class="time-ex-wrapper-laptop">
+                <p>Expires in:</p>
+                <p>10:56:21</p>
+              </div>
+            </ul>
+
+            <div class="wrapper-timeandbtn">
+              <div class="time-ex-wrapper">
+                <p>Expires in:</p>
+                <p>10:56:21</p>
+              </div>
+              <div class="btn-slide-wrapper">
+                <a onclick="plusSlides(-1)"> <img src="./img/body/Left.png" alt="" class="prev"></a>
+                <a onclick="plusSlides(1)"><img src="./img/body/right.png" alt="" class="next"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- selection best sell -->
+      <div class="row">
+        <div class="col-12">
+          <div class="slideshow-container">
+            <!-- page1 -->
+            <div class="mySlides   animate__animated animate__fadeInLeft ">
+              <div class="wrpper-box-tiem">
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19.png" alt="">
+                    <div class="sign-tag-save">
+                      <p>Save 10%</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Coffe & teas</p>
+                      <p>Coffe 1kg</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$20</p>
+                        <p>$05</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 90%"></div>
+                      </div>
+                      <p>Sold: 20/50</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+                </div>
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19-1.png" alt="">
+                    <div class="sign-tag-best">
+                      <p>Best deal</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Meat</p>
+                      <p>Halal Sausage 350g</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$4</p>
+                        <p>$10</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 45%"></div>
+                      </div>
+                      <p>Sold: 7/20</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+              <div class="wrpper-box-tiem-tablet">
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19.png" alt="">
+                    <div class="sign-tag-save">
+                      <p>Save 10%</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Coffe & teas</p>
+                      <p>Coffe 1kg</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$20</p>
+                        <p>$05</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 90%"></div>
+                      </div>
+                      <p>Sold: 20/50</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+                </div>
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19-1.png" alt="">
+                    <div class="sign-tag-best">
+                      <p>Best deal</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Meat</p>
+                      <p>Halal Sausage 350g</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$4</p>
+                        <p>$10</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 45%"></div>
+                      </div>
+                      <p>Sold: 7/20</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+                </div>
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19-2.png" alt="">
+                    <div class="sign-tag-save">
+                      <p>Save 4%</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Coffe & teas</p>
+                      <p>Green Tea 250g</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$3 </p>
+                        <p>$7</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 80%"></div>
+                      </div>
+                      <p>Sold: 32/50</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="wrpper-box-tiem-laptop">
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19.png" alt="">
+                    <div class="sign-tag-save">
+                      <p>Save 10%</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Coffe & teas</p>
+                      <p>Coffe 1kg</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$20</p>
+                        <p>$05</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 90%"></div>
+                      </div>
+                      <p>Sold: 20/50</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+                </div>
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19-1.png" alt="">
+                    <div class="sign-tag-best">
+                      <p>Best deal</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Meat</p>
+                      <p>Halal Sausage 350g</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$4</p>
+                        <p>$10</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 45%"></div>
+                      </div>
+                      <p>Sold: 7/20</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+                </div>
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19-2.png" alt="">
+                    <div class="sign-tag-save">
+                      <p>Save 4%</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Coffe & teas</p>
+                      <p>Green Tea 250g</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$3 </p>
+                        <p>$7</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 80%"></div>
+                      </div>
+                      <p>Sold: 32/50</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+                </div>
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19-3.png" alt="">
+                    <div class="sign-tag-save">
+                      <p>Save 8%</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Vegetable</p>
+                      <p>Onion 1kg</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$0.50</p>
+                        <p>$2</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 5%"></div>
+                      </div>
+                      <p>Sold: 2/10</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="wrpper-box-tiem-pc">
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19.png" alt="">
+                    <div class="sign-tag-save">
+                      <p>Save 10%</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Coffe & teas</p>
+                      <p>Coffe 1kg</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$20</p>
+                        <p>$05</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 90%"></div>
+                      </div>
+                      <p>Sold: 20/50</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+                </div>
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19-1.png" alt="">
+                    <div class="sign-tag-best">
+                      <p>Best deal</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Meat</p>
+                      <p>Halal Sausage 350g</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$4</p>
+                        <p>$10</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 45%"></div>
+                      </div>
+                      <p>Sold: 7/20</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+                </div>
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19-2.png" alt="">
+                    <div class="sign-tag-save">
+                      <p>Save 4%</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Coffe & teas</p>
+                      <p>Green Tea 250g</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$3 </p>
+                        <p>$7</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 80%"></div>
+                      </div>
+                      <p>Sold: 32/50</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+                </div>
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19-3.png" alt="">
+                    <div class="sign-tag-save">
+                      <p>Save 8%</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Vegetable</p>
+                      <p>Onion 1kg</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$0.50</p>
+                        <p>$2</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 5%"></div>
+                      </div>
+                      <p>Sold: 2/10</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+                </div>
+                <div class="form-item bg-form">
+
+                  <div class="topic-section">
+                    <p>10% OFF</p>
+                    <p>For new member sign up at the first time</p>
+                  </div>
+                  <div class="form-section">
+                    <form action="" class="form-email">
+                      <p>Email address</p>
+                      <input type="search" placeholder="johndoe@gmail.com" class="input-email">
+                      <img src="./img/body/li_mail.png" alt="">
+                    </form>
+                    <form action="" class="form-password">
+                      <p>Password</p>
+                      <input type="password" maxlength="8" placeholder="Maximum8charactors" class="input-password">
+                      <img src="./img/body/li_key.png" alt="">
+                    </form>
+                  </div>
+                  <button>
+                    <p>Register Now</p>
+                  </button>
+  
+                </div>
+              </div>
+            </div>
+            <!-- page2 -->
+            <div class="mySlides  animate__animated animate__fadeInLeft ">
+              <div class="wrpper-box-tiem">
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19-2.png" alt="">
+                    <div class="sign-tag-save">
+                      <p>Save 4%</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Coffe & teas</p>
+                      <p>Green Tea 250g</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$3 </p>
+                        <p>$7</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 80%"></div>
+                      </div>
+                      <p>Sold: 32/50</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+                </div>
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19-3.png" alt="">
+                    <div class="sign-tag-save">
+                      <p>Save 8%</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Vegetable</p>
+                      <p>Onion 1kg</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$0.50</p>
+                        <p>$2</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 5%"></div>
+                      </div>
+                      <p>Sold: 2/10</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+              <div class="wrpper-box-tiem-tablet">
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19-3.png" alt="">
+                    <div class="sign-tag-save">
+                      <p>Save 8%</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Vegetable</p>
+                      <p>Onion 1kg</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$0.50</p>
+                        <p>$2</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 5%"></div>
+                      </div>
+                      <p>Sold: 2/10</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+                </div>
+                <div class="box-item">
+
+                </div>
+                <div class="box-item">
+
+                </div>
+              </div>
+              <div class="wrpper-box-tiem-laptop">
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19-3.png" alt="">
+                    <div class="sign-tag-save">
+                      <p>Save 8%</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Vegetable</p>
+                      <p>Onion 1kg</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$0.50</p>
+                        <p>$2</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 5%"></div>
+                      </div>
+                      <p>Sold: 2/10</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+
+                </div>
+                <div class="box-item">
+
+
+                </div>
+                <div class="box-item">
+
+
+                </div>
+                <div class="box-item">
+
+
+                </div>
+              </div>
+              <div class="wrpper-box-tiem-pc">
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19.png" alt="">
+                    <div class="sign-tag-save">
+                      <p>Save 10%</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Coffe & teas</p>
+                      <p>Coffe 1kg</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$20</p>
+                        <p>$05</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 90%"></div>
+                      </div>
+                      <p>Sold: 20/50</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+                </div>
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19-1.png" alt="">
+                    <div class="sign-tag-best">
+                      <p>Best deal</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Meat</p>
+                      <p>Halal Sausage 350g</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$4</p>
+                        <p>$10</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 45%"></div>
+                      </div>
+                      <p>Sold: 7/20</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+                </div>
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19-2.png" alt="">
+                    <div class="sign-tag-save">
+                      <p>Save 4%</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Coffe & teas</p>
+                      <p>Green Tea 250g</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$3 </p>
+                        <p>$7</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 80%"></div>
+                      </div>
+                      <p>Sold: 32/50</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+                </div>
+                <div class="box-item">
+                  <div class="img-section">
+                    <img src="./img/body/Rectangle 19-3.png" alt="">
+                    <div class="sign-tag-save">
+                      <p>Save 8%</p>
+                    </div>
+                  </div>
+                  <div class="content-section">
+                    <div class="name-section">
+                      <p>Vegetable</p>
+                      <p>Onion 1kg</p>
+                    </div>
+                    <div class="img-star">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                      <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                      <p>(4)</p>
+                    </div>
+                    <div class="text-person-wrapper">
+                      <p>By</p>
+                      <p>Mr.food</p>
+                    </div>
+                    <div class="wrapper-pay">
+                      <div class="text-cost-wrapper">
+                        <p>$0.50</p>
+                        <p>$2</p>
+                      </div>
+                    </div>
+                    <div class="bar-progress-section mt-3">
+                      <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 5%"></div>
+                      </div>
+                      <p>Sold: 2/10</p>
+                    </div>
+                    <button>
+                      <img src="./img/body/li_shopping-cart.png" alt="">
+                      <p>Add to cart</p>
+                    </button>
+
+                  </div>
+                </div>
+                <div class="form-item bg-form">
+
+                  <div class="topic-section">
+                    <p>10% OFF</p>
+                    <p>For new member sign up at the first time</p>
+                  </div>
+                  <div class="form-section">
+                    <form action="" class="form-email">
+                      <p>Email address</p>
+                      <input type="search" placeholder="johndoe@gmail.com" class="input-email">
+                      <img src="./img/body/li_mail.png" alt="">
+                    </form>
+                    <form action="" class="form-password">
+                      <p>Password</p>
+                      <input type="password" maxlength="8" placeholder="Maximum8charactors" class="input-password">
+                      <img src="./img/body/li_key.png" alt="">
+                    </form>
+                  </div>
+                  <button>
+                    <p>Register Now</p>
+                  </button>
+  
+                </div>
+              </div>
+            </div>
+            <!-- page3 -->
+            <div class="mySlides  animate__animated animate__fadeInLeft  ">
+
+              <div class="form-item bg-form">
+
+                <div class="topic-section">
+                  <p>10% OFF</p>
+                  <p>For new member sign up at the first time</p>
+                </div>
+                <div class="form-section">
+                  <form action="" class="form-email">
+                    <p>Email address</p>
+                    <input type="search" placeholder="johndoe@gmail.com" class="input-email">
+                    <img src="./img/body/li_mail.png" alt="">
+                  </form>
+                  <form action="" class="form-password">
+                    <p>Password</p>
+                    <input type="password" maxlength="8" placeholder="Maximum8charactors" class="input-password">
+                    <img src="./img/body/li_key.png" alt="">
+                  </form>
+                </div>
+                <button>
+                  <p>Register Now</p>
+                </button>
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- top chart -->
+      <div class="row mt-5 justify-content-between row-adjust-padding row-adjust-padding-tablet">
+        <!-- row1 -->
+        <div class="col-12 col-md-6 mt-5 col-xl-2 col-ad-laptop">
+          <div class="chart-wrapper">
+            <div class="topic-section">
+              <p>Top Sells</p>
+              <div class="text-border">
+                <div class="line"></div>
+              </div>
+            </div>
+            <div class="content-section">
+              <div class="content-wrapper">
+                <img src="./img/body/image 7.png" alt="">
+                <div class="detail-wrapper">
+                  <p>Oranger 1 kg</p>
+                  <div class="img-star">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                    <p>(4)</p>
+                  </div>
+                  <div class="wrapper-pay">
+                    <div class="text-cost-wrapper">
+                      <p>$20</p>
+                      <p>$05</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-wrapper">
+                <img src="./img/body/image 4.png" alt="">
+                <div class="detail-wrapper">
+                  <p>Oranger 1 kg</p>
+                  <div class="img-star">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                    <p>(4)</p>
+                  </div>
+                  <div class="wrapper-pay">
+                    <div class="text-cost-wrapper">
+                      <p>$20</p>
+                      <p>$05</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-wrapper">
+                <img src="./img/body/image 5.png" alt="">
+                <div class="detail-wrapper">
+                  <p>Oranger 1 kg</p>
+                  <div class="img-star">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                    <p>(4)</p>
+                  </div>
+                  <div class="wrapper-pay">
+                    <div class="text-cost-wrapper">
+                      <p>$20</p>
+                      <p>$05</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- row2 -->
+        <div class="col-12 col-md-6 mt-5  col-xl-2 col-ad-laptop">
+          <div class="chart-wrapper">
+            <div class="topic-section">
+              <p>Top Rated</p>
+              <div class="text-border">
+                <div class="line"></div>
+              </div>
+            </div>
+            <div class="content-section">
+              <div class="content-wrapper">
+                <img src="./img/body/image 3.png" alt="">
+                <div class="detail-wrapper">
+                  <p>Oranger 1 kg</p>
+                  <div class="img-star">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                    <p>(4)</p>
+                  </div>
+                  <div class="wrapper-pay">
+                    <div class="text-cost-wrapper">
+                      <p>$20</p>
+                      <p>$05</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-wrapper">
+                <img src="./img/body/image 4.png" alt="">
+                <div class="detail-wrapper">
+                  <p>Oranger 1 kg</p>
+                  <div class="img-star">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                    <p>(4)</p>
+                  </div>
+                  <div class="wrapper-pay">
+                    <div class="text-cost-wrapper">
+                      <p>$20</p>
+                      <p>$05</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-wrapper">
+                <img src="./img/body/image 6.png" alt="">
+                <div class="detail-wrapper">
+                  <p>Oranger 1 kg</p>
+                  <div class="img-star">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                    <p>(4)</p>
+                  </div>
+                  <div class="wrapper-pay">
+                    <div class="text-cost-wrapper">
+                      <p>$20</p>
+                      <p>$05</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- row3 -->
+        <div class="col-12 col-md-6 mt-5  col-xl-2 col-ad-laptop">
+          <div class="chart-wrapper">
+            <div class="topic-section">
+              <p>Trending Items</p>
+              <div class="text-border">
+                <div class="line"></div>
+              </div>
+            </div>
+            <div class="content-section">
+              <div class="content-wrapper">
+                <img src="./img/body/image 9.png" alt="">
+                <div class="detail-wrapper">
+                  <p>Oranger 1 kg</p>
+                  <div class="img-star">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                    <p>(4)</p>
+                  </div>
+                  <div class="wrapper-pay">
+                    <div class="text-cost-wrapper">
+                      <p>$20</p>
+                      <p>$05</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-wrapper">
+                <img src="./img/body/image 8.png" alt="">
+                <div class="detail-wrapper">
+                  <p>Oranger 1 kg</p>
+                  <div class="img-star">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                    <p>(4)</p>
+                  </div>
+                  <div class="wrapper-pay">
+                    <div class="text-cost-wrapper">
+                      <p>$20</p>
+                      <p>$05</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-wrapper">
+                <img src="./img/body/image 7.png" alt="">
+                <div class="detail-wrapper">
+                  <p>Oranger 1 kg</p>
+                  <div class="img-star">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                    <p>(4)</p>
+                  </div>
+                  <div class="wrapper-pay">
+                    <div class="text-cost-wrapper">
+                      <p>$20</p>
+                      <p>$05</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- row4 -->
+        <div class="col-12 col-md-6 mt-5  col-xl-2 col-ad-laptop">
+          <div class="chart-wrapper">
+            <div class="topic-section">
+              <p>Recently Added</p>
+              <div class="text-border">
+                <div class="line"></div>
+              </div>
+            </div>
+            <div class="content-section">
+              <div class="content-wrapper">
+                <img src="./img/body/image 6.png" alt="">
+                <div class="detail-wrapper">
+                  <p>Oranger 1 kg</p>
+                  <div class="img-star">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                    <p>(4)</p>
+                  </div>
+                  <div class="wrapper-pay">
+                    <div class="text-cost-wrapper">
+                      <p>$20</p>
+                      <p>$05</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-wrapper">
+                <img src="./img/body/image 9.png" alt="">
+                <div class="detail-wrapper">
+                  <p>Oranger 1 kg</p>
+                  <div class="img-star">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                    <p>(4)</p>
+                  </div>
+                  <div class="wrapper-pay">
+                    <div class="text-cost-wrapper">
+                      <p>$20</p>
+                      <p>$05</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-wrapper">
+                <img src="./img/body/image 5.png" alt="">
+                <div class="detail-wrapper">
+                  <p>Oranger 1 kg</p>
+                  <div class="img-star">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star.png" alt="">
+                    <img src="./img/body/Iconly/Bold/Star-1.png" alt="">
+                    <p>(4)</p>
+                  </div>
+                  <div class="wrapper-pay">
+                    <div class="text-cost-wrapper">
+                      <p>$20</p>
+                      <p>$05</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- app section -->
+      <div class="row mt-5">
+        <div class="col-12 bd-green bg-vet-pattern app-section">
+          <div class="row">
+            <div class="col-12">
+              <div class="wrapper-app-btn-pic">
+                <div class="wrapper-appandbtn">
+                  <div class="topic-section-wrapper">
+                    <div class="topic">
+                      <p>Shop Faster With Groceyish App</p>
+                    </div>
+                    <div class="subtopic">
+                      <p>Available on both IOS & Android</p>
+                    </div>
+                  </div>
+
+                  <div class="btn-section">
+                    <button><img src="./img/body/app-section/appstore.png" alt=""></button>
+                    <button><img src="./img/body/app-section/googleplay.png" alt=""></button>
+                  </div>
+                </div>
+                <div class="pic-section">
+                  <img src="./img/body/app-section/App.png" alt="" class="app-pic">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </main>
+
+  <footer>
+    <div class="container-fluid  row-adjust-padding-tablet">
+      <!-- service -->
+      <div class="row mt-5 ms-1 mb-3 justify-content-between">
+        <!-- sec1 -->
+        <div class="col-12 col-md-3 mt-5 pe-0 ps-0">
+          <div class="wrapper-footer-service-1">
+            <div class="img-section">
+              <img src="./img/footer/svgexport-6 (2) 1.png" alt="">
+            </div>
+            <div class="text-section">
+              <p>Best Prices & Deals</p>
+              <p>Don't miss our daily amazing deals and prices</p>
+            </div>
+
+          </div>
+        </div>
+        <!-- sec2 -->
+        <div class="col-12 col-md-3 mt-5 pe-0 ps-0">
+          <div class="wrapper-footer-service-2">
+            <div class="img-section">
+              <img src="./img/footer/svgexport-6 (3) 1.png" alt="">
+            </div>
+            <div class="text-section">
+              <p>Refundable</p>
+              <p>If your items have damage we agree to refund it</p>
+            </div>
+
+          </div>
+        </div>
+        <!-- sec3 -->
+        <div class="col-12 col-md-3 mt-5 pe-0 ps-0">
+          <div class="wrapper-footer-service-3">
+            <div class="img-section">
+              <img src="./img/footer/svgexport-7 (1) 2.png" alt="">
+            </div>
+            <div class="text-section">
+              <p>Free delivery</p>
+              <p>Do purchase over $50 and get free delivery anywhere</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- line part -->
+      <div class="row mb-4">
+        <div class="col">
+          <div class="line-part"></div>
+        </div>
+      </div>
+      <!-- footer-support -->
+      <div class="row justify-content-center mt-5 footer-support" >
+
+        <div class="col-12 col-lg-5 text-center ps-0 pe-0">
+          <!-- sec1 -->
+          <div class="wrapper-logoandtext">
+            <div class="img-section-footer">
+              <img src="./img/footer/Logo-footer.png" alt="">
+            </div>
+            <div class="row">
+              <!-- line1 -->
+              <div class=" col-12  mb-4 align-self-center">
+                <div class="detail-wrapper">
+                  <div class="wrapper-icon-text-footer">
+                    <img src="./img/footer/footer-icon/li_map-pin.png" alt="">
+                    <div class="text-wrapper">
+                      <p>Address:</p>
+                      <p> 1762 School House Road</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- line2 -->
+              <div class=" col-12   mb-4 align-self-center">
+                <div class="detail-wrapper">
+                  <div class="wrapper-icon-text-footer">
+                    <img src="./img/footer/footer-icon/li_phone.png" alt="">
+                    <div class="text-wrapper">
+                      <p>Call Us:</p>
+                      <p> 1233-777</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- line3 -->
+              <dyiv class=" col-12   mb-4 align-self-center">
+                <div class="detail-wrapper">
+                  <div class="wrapper-icon-text-footer">
+                    <img src="./img/footer/footer-icon/li_mail.png" alt="">
+                    <div class="text-wrapper">
+                      <p>Email:</p>
+                      <p> groceyish@contact.com</p>
+                    </div>
+                  </div>
+                </div>
+              </dyiv>
+
+              <!-- line4 -->
+              <div class=" col-12  mb-4 align-self-center">
+                <div class="detail-wrapper">
+                  <div class="wrapper-icon-text-footerlast">
+                    <img src="./img/footer/footer-icon/li_clock-9.png" alt="">
+                    <div class="text-wrapper-last">
+                      <p style="width: 93px;">Work hours:</p>
+                      <p> 8:00 - 20:00, Dunday - Thursday</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sec2-->
+        <div class="col-12 col-md-4 col-lg-2 ">
+          <div class="wrapper-sec2">
+            <p>Account</p>
+            <ul class="app-sec-list">
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Track Order</a></li>
+              <li><a href="#">Shipping Details</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- sec3-->
+        <div class="col-12 col-md-4 col-lg-2">
+          <div class="wrapper-sec2">
+            <p>Useful links</p>
+            <ul class="app-sec-list">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#"> Hot deals</a></li>
+              <li><a href="#">Promotions</a></li>
+              <li><a href="#">New products</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- sec4-->
+        <div class="col-12 col-md-4 col-lg-2">
+          <div class="wrapper-sec2">
+            <p>Help Center</p>
+            <ul class="app-sec-list">
+              <li><a href="#">Payments</a></li>
+              <li><a href="#">Refund</a></li>
+              <li><a href="#">Checkout</a></li>
+              <li><a href="#">Shipping </a></li>
+              <li><a href="#">Q&A </a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- line part -->
+      <div class="row">
+        <div class="col">
+          <div class="line-part2"></div>
+        </div>
+      </div>
+      <!-- last-footer -->
+      <div class="row align-items-center mb-5">
+        <div class="col-12 col-md-12 col-lg-4 mt-5 ps-0 pe-0">
+          <p class="text-center company">©2022,All rights reserved</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mt-5 ps-0 pe-0">
+          <div class="wrapper-payment">
+            <img src="./img/footer/Payment.png" alt="">
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mt-5 ps-0 pe-0">
+          <div class="social-wrapper">
+            <a href="#"><img src="./img/footer/social btn/Group 21.png" alt=""></a>
+            <a href="#"><img src="./img/footer/social btn/Group 20.png" alt=""></a>
+            <a href="#"><img src="./img/footer/social btn/Group 18.png" alt=""></a>
+            <a href="#"><img src="./img/footer/social btn/Group 19.png" alt=""></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/Study.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+  <script type="module">
+    import swiper from 'https://cdn.jsdelivr.net/npm/swiper@10.0.4/+esm'
+  </script>
+
+
+
+  <!-- Initialize Swiper -->
+  <script>
+
+
+    function uuu(u) {
+      if (u.matches) { // If media query matches
+        var swiper = new Swiper('.swiper', {
+          slidesPerView: 2,
+          direction: getDirection(),
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          on: {
+            resize: function () {
+              swiper.changeDirection(getDirection());
+            },
+          },
+        });
+
+        function getDirection() {
+          var windowWidth = window.innerWidth;
+          var direction = window.innerWidth <= 100 ? 'vertical' : 'horizontal';
+
+          return direction;
+        }
+      }
+    }
+
+    var u = window.matchMedia("(max-width: 768px)")
+    uuu(u) // Call listener function at run time
+    u.addListener(uuu) // Attach listener function on state changes
+
+
+    function myFunction(x) {
+      if (x.matches) { // If media query matches
+        var swiper = new Swiper('.swiper', {
+          slidesPerView: 4,
+          direction: getDirection(),
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          on: {
+            resize: function () {
+              swiper.changeDirection(getDirection());
+            },
+          },
+        });
+
+        function getDirection() {
+          var windowWidth = window.innerWidth;
+          var direction = window.innerWidth <= 100 ? 'vertical' : 'horizontal';
+
+          return direction;
+        }
+      }
+    }
+
+    var x = window.matchMedia("(min-width: 768px)", "(max-width: 1199px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
+
+
+
+    function eee(y) {
+      if (y.matches) { // If media query matches
+        var swiper = new Swiper('.swiper', {
+          slidesPerView: 5,
+          direction: getDirection(),
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          on: {
+            resize: function () {
+              swiper.changeDirection(getDirection());
+            },
+          },
+        });
+
+        function getDirection() {
+          var windowWidth = window.innerWidth;
+          var direction = window.innerWidth <= 100 ? 'vertical' : 'horizontal';
+
+          return direction;
+        }
+      }
+    }
+
+    var y = window.matchMedia("(min-width: 1200px)", "(max-width: 1399px)")
+    eee(y) // Call listener function at run time
+    y.addListener(eee) // Attach listener function on state changes
+
+
+    function zzz(z) {
+      if (z.matches) { // If media query matches
+        var swiper = new Swiper('.swiper', {
+          slidesPerView: 7,
+          direction: getDirection(),
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          on: {
+            resize: function () {
+              swiper.changeDirection(getDirection());
+            },
+          },
+        });
+
+        function getDirection() {
+          var windowWidth = window.innerWidth;
+          var direction = window.innerWidth <= 100 ? 'vertical' : 'horizontal';
+
+          return direction;
+        }
+      }
+    }
+
+    var z = window.matchMedia("(min-width: 1400px)")
+    zzz(z) // Call listener function at run time
+    z.addListener(zzz) // Attach listener function on state changes
+
+
+  </script>
+
+
+
+</body>
+
+</html>
