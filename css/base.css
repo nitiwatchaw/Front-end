@@ -993,7 +993,9 @@ ul li:first-child a p {
     justify-content: flex-end !important;
 }
 
-
+.col-ad-mobile{
+    padding: 0px 60px !important;
+}
 .card-wrapper,
 .wrpper-box-tiem {
     display: flex;
@@ -1004,7 +1006,8 @@ ul li:first-child a p {
 
 .card-wrapper-tablet {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
     padding: 0px 10px;
     display: none;
 }
@@ -2302,6 +2305,8 @@ ul li:first-child a p {
     .card-wrapper-pc{
         display: flex;
         padding: 0px;
+        justify-content: center;
+        gap: 24px;
     }
     .form-item {
         width: 50%;
