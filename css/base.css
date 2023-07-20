@@ -2563,11 +2563,6 @@ ul li:first-child a p {
         padding: 0px;
     }
 
-    .wrapper-footer-service-1,
-    .wrapper-footer-service-2,
-    .wrapper-footer-service-3 {
-     
-    }
 }
 
 @media (min-width: 1700px) {
