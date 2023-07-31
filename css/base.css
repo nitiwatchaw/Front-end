@@ -1384,6 +1384,8 @@ ul li:first-child a p {
     margin: auto;
 }
 
+
+
 .mySlides {
     display: none;
 }
@@ -2376,7 +2378,9 @@ ul li:first-child a p {
         position: relative;
         margin: unset;
         padding: 0px 60px;
+
     }
+
 
     .item-prod {
         width: calc(628px/3);
@@ -2563,6 +2567,8 @@ ul li:first-child a p {
         padding: 0px;
     }
 
+ 
+
 }
 
 @media (min-width: 1700px) {
@@ -2621,6 +2627,7 @@ ul li:first-child a p {
     .row-adjust-padding-tablet {
         padding: 0px 150px;
     }
+
     .wrapper-appandbtn {
         display: flex;
         flex-direction: column;
