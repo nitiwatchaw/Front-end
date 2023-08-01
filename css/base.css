@@ -1,3 +1,7 @@
+@font-face {
+    font-family: myfont;
+    src: url(./font/Quicksand-VariableFont_wght.ttf);
+}
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -28,7 +32,7 @@ body {
 
 p {
     margin: 0px;
-    font-family: Quicksand;
+    font-family: myfont;
 }
 
 a {
@@ -150,7 +154,7 @@ form {
     background-color: unset;
     border: 0px;
     color: black;
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -207,7 +211,7 @@ input:focus {
 }
 
 input ::placeholder {
-    font-family: Quicksand;
+    font-family: myfont;
 
     font-style: normal;
     font-weight: 500;
@@ -255,13 +259,13 @@ input ::placeholder {
 }
 
 .wrapper-cart a:first-child {
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 14px;
     color: #000;
 }
 
 .wrapper-cart a:last-child {
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 12px;
     color: #3BB77E;
 }
@@ -275,7 +279,7 @@ input ::placeholder {
 }
 
 .profile p {
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -348,7 +352,7 @@ input ::placeholder {
 }
 
 .fav-btn p {
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 14px;
     font-style: normal;
 }
@@ -435,7 +439,7 @@ ul li a img {
 }
 
 ul li a p {
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -444,7 +448,7 @@ ul li a p {
 }
 
 ul li:first-child a p {
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -467,7 +471,7 @@ ul li:first-child a p {
 .wrapper-menu-bar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
     background-color: white;
     height: 100vh;
@@ -477,6 +481,7 @@ ul li:first-child a p {
     z-index: 200;
     left: -270px;
     top: 0px;
+    padding-top: 100px;
 }
 
 .bg {
@@ -549,7 +554,7 @@ ul li:first-child a p {
 }
 
 .content-slide p:first-child {
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 55px;
     font-style: normal;
     font-weight: 700;
@@ -560,7 +565,7 @@ ul li:first-child a p {
 
 .content-slide p:nth-child(2) {
     color: #494949;
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -603,7 +608,7 @@ ul li:first-child a p {
     color: white;
     background-color: #3BB77E;
     height: 55px;
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -654,7 +659,7 @@ ul li:first-child a p {
 .topic-feat p,
 .topic-bestsell p {
     font-size: 36px;
-    font-family: Quicksand;
+    font-family: myfont;
     font-weight: bold;
     padding-left: 10px;
 }
@@ -732,14 +737,14 @@ ul li:first-child a p {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    font-family: Quicksand;
+    font-family: myfont;
     text-align: center;
     margin-bottom: 5px;
 }
 
 .item p:nth-child(3) {
     color: var(--grey, #ADADAD);
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -835,13 +840,13 @@ ul li:first-child a p {
 
 .content-wrapper p:nth-child(2) {
     font-weight: bold;
-    font-family: Quicksand;
+    font-family: myfont;
 }
 
 .text-person-wrapper {
     display: flex;
     align-items: center;
-    font-family: Quicksand;
+    font-family: myfont;
 }
 
 .text-person-wrapper p:first-child {
@@ -1197,7 +1202,7 @@ ul li:first-child a p {
 .wrapper-content-green .topic,
 .topic-section-wrapper .topic {
     color: var(--black, #253D4E);
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
@@ -1207,7 +1212,7 @@ ul li:first-child a p {
 
 .subtopic {
     color: #838383;
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 23px;
     font-style: normal;
     font-weight: 500;
@@ -1263,14 +1268,14 @@ ul li:first-child a p {
 .time-ex-wrapper p:first-child,
 .time-ex-wrapper-laptop p:first-child {
     color: white;
-    font-family: Quicksand;
+    font-family: myfont;
 }
 
 .time-ex-wrapper p:last-child,
 .time-ex-wrapper-laptop p:last-child {
     color: white;
     letter-spacing: 1px;
-    font-family: Quicksand;
+    font-family: myfont;
 }
 
 .box-item {
@@ -1309,7 +1314,7 @@ ul li:first-child a p {
 
 .sign-tag-save p,
 .sign-tag-best p {
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -1340,7 +1345,7 @@ ul li:first-child a p {
 }
 
 .bar-progress-section p {
-    font-family: Quicksand;
+    font-family: myfont;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -1514,7 +1519,7 @@ ul li:first-child a p {
 }
 
 .chart-wrapper .topic-section p {
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -1572,7 +1577,7 @@ ul li:first-child a p {
 
 .chart-wrapper .detail-wrapper>p {
     color: var(--black, #253D4E);
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 18px;
     font-style: normal;
     font-weight: blod;
@@ -1631,7 +1636,7 @@ ul li:first-child a p {
 .wrapper-footer-service-2 .text-section p:first-child,
 .wrapper-footer-service-3 .text-section p:first-child {
     color: var(--black, #253D4E);
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -1653,7 +1658,7 @@ ul li:first-child a p {
 .wrapper-footer-service-2 .text-section p:nth-child(2),
 .wrapper-footer-service-3 .text-section p:nth-child(2) {
     color: var(--grey, #ADADAD);
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -1710,7 +1715,7 @@ ul li:first-child a p {
 
 .wrapper-icon-text-footer .text-wrapper p:first-child {
     color: var(--black, #253D4E);
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 16px;
     font-style: normal;
     font-weight: bold;
@@ -1719,7 +1724,7 @@ ul li:first-child a p {
 
 .wrapper-icon-text-footer .text-wrapper p:last-child {
     color: var(--black, #253D4E);
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -1741,7 +1746,7 @@ ul li:first-child a p {
 
 .app-sec-list li a {
     color: var(--black, #253D4E);
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -1750,7 +1755,7 @@ ul li:first-child a p {
 
 .wrapper-sec2 p {
     color: var(--black, #253D4E);
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -1759,7 +1764,7 @@ ul li:first-child a p {
 
 .app-sec-list a {
     color: var(--black, #253D4E);
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -1768,7 +1773,7 @@ ul li:first-child a p {
 
 .company {
     color: var(--black, #253D4E);
-    font-family: Quicksand;
+    font-family: myfont;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
