@@ -2,6 +2,7 @@
     font-family: myfont;
     src: url(./font/Quicksand-VariableFont_wght.ttf);
 }
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -2214,7 +2215,7 @@ ul li:first-child a p {
 
     .profile {
         width: 40%;
-
+        justify-content: flex-end;
     }
 
     .wrapper-cart-fav {
@@ -2572,7 +2573,7 @@ ul li:first-child a p {
         padding: 0px;
     }
 
- 
+
 
 }
 
