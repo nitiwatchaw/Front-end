@@ -4,6 +4,7 @@
 }
 html{
     scrollbar-color: #48b47c #265f41;
+    scroll-behavior: smooth;
     
 }
 /* width */
