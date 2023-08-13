@@ -2,7 +2,10 @@
     font-family: myfont;
     src: url(./font/Quicksand-VariableFont_wght.ttf);
 }
-
+html{
+    scrollbar-color: #48b47c #265f41;
+    
+}
 /* width */
 ::-webkit-scrollbar {
     width: 10px;

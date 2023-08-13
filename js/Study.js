@@ -1,6 +1,6 @@
 const openBtn = document.getElementById('btn-menu-open');
 const closeBtn = document.getElementById('btn-menu-close');
-
+const sidebar = document.querySelector('.wrapper-menu-bar')
 
 const nav = document.getElementById('navigation')
 
@@ -9,6 +9,13 @@ function disableScroll() {
     document.body.classList.add("stop-scrolling");
     nav.style.left = "0px";
 
+    document.onclick = function (e) {
+        if (!sidebar.contains(e.target) && !openBtn.contains(e.target)) {
+            nav.style.left = "-270px";
+            document.body.classList.add("stop-scrolling");
+        }
+    } 
+    
 }
 function enableScroll() {
     document.body.classList.remove("stop-scrolling");
@@ -22,13 +29,13 @@ showSlides(slideIndex);
 
 function plusSlides(n) {
 
-        showSlides(slideIndex += n);
+    showSlides(slideIndex += n);
 
 }
 
 function currentSlide(n) {
-    
-        showSlides(slideIndex = n);
+
+    showSlides(slideIndex = n);
 
 
 }
