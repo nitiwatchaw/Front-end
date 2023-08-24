@@ -33,6 +33,8 @@ body {
     background: #FFF;
     margin: 0 auto;
     position: relative;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 p {
@@ -1616,7 +1618,7 @@ ul li:first-child a p {
 
 .pic-section {
     position: absolute;
-    right: -20px;
+    right: 2px;
     bottom: -55px;
 }
 
