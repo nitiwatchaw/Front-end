@@ -12,7 +12,7 @@ function disableScroll() {
     document.onclick = function (e) {
         if (!sidebar.contains(e.target) && !openBtn.contains(e.target)) {
             nav.style.left = "-270px";
-            document.body.classList.add("stop-scrolling");
+            document.body.classList.remove("stop-scrolling");
         }
     } 
     
