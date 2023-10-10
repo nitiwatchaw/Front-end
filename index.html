@@ -15,7 +15,7 @@
   <link href="css/base.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.css" />
 
-  <title>Front-end test</title>
+  <title>Landing Page Cart Food</title>
 
 </head>
 
@@ -278,7 +278,7 @@
 
       <!-- selection cate-->
       <div class="row align-items-center mb-5">
-        <div class="col col-ad col-ad-mobile">
+        <div class="col  col-ad-mobile">
           <div class="swiper swiper-horizontal">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -3293,7 +3293,7 @@
     </div>
   </footer>
   <script src="./js/Study.js"></script>
-  <script src="./js/cdnjs/swiper.js"></script>
+
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -3301,135 +3301,41 @@
   <script src="./js/bootstrap.min.js"></script>
 
 
-
+  <script src="
+  ./js/package/swiper-bundle.min.js
+  "></script>
 
   <!-- Initialize Swiper -->
   <script>
 
 
-    function uuu(u) {
-      if (u.matches) { // If media query matches
-        var swiper = new Swiper('.swiper', {
+
+
+    new Swiper('.swiper', {
+      slidesPerView: 4,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        350: {
           slidesPerView: 2,
-          direction: getDirection(),
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-          on: {
-            resize: function () {
-              swiper.changeDirection(getDirection());
-            },
-          },
-        });
 
-        function getDirection() {
-          var windowWidth = window.innerWidth;
-          var direction = window.innerWidth <= 100 ? 'vertical' : 'horizontal';
-
-          return direction;
-        }
-      }
-      return
-    }
-
-    var u = window.matchMedia("(max-width: 768px)")
-    uuu(u) // Call listener function at run time
-    u.addListener(uuu) // Attach listener function on state changes
-
-
-    function myFunction(x) {
-      if (x.matches) { // If media query matches
-        var swiper = new Swiper('.swiper', {
+        },
+        650: {
           slidesPerView: 4,
-          direction: getDirection(),
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-          on: {
-            resize: function () {
-              swiper.changeDirection(getDirection());
-            },
-          },
-        });
 
-        function getDirection() {
-          var windowWidth = window.innerWidth;
-          var direction = window.innerWidth <= 100 ? 'vertical' : 'horizontal';
+        },
 
-          return direction;
-        }
-      }
-      return
-    }
-
-    var x = window.matchMedia("(min-width: 768px)", "(max-width: 1199px)")
-    myFunction(x) // Call listener function at run time
-    x.addListener(myFunction) // Attach listener function on state changes
-
-
-
-    function eee(y) {
-      if (y.matches) { // If media query matches
-        var swiper = new Swiper('.swiper', {
-          slidesPerView: 5,
-          direction: getDirection(),
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-          on: {
-            resize: function () {
-              swiper.changeDirection(getDirection());
-            },
-          },
-        });
-
-        function getDirection() {
-          var windowWidth = window.innerWidth;
-          var direction = window.innerWidth <= 100 ? 'vertical' : 'horizontal';
-
-          return direction;
-        }
-      }
-      return
-    }
-
-    var y = window.matchMedia("(min-width: 1200px)", "(max-width: 1399px)")
-    eee(y) // Call listener function at run time
-    y.addListener(eee) // Attach listener function on state changes
-
-
-    function zzz(z) {
-      if (z.matches) { // If media query matches
-        var swiper = new Swiper('.swiper', {
+        1200: {
           slidesPerView: 7,
-          direction: getDirection(),
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-          on: {
-            resize: function () {
-              swiper.changeDirection(getDirection());
-            },
-          },
-        });
 
-        function getDirection() {
-          var windowWidth = window.innerWidth;
-          var direction = window.innerWidth <= 100 ? 'vertical' : 'horizontal';
-
-          return direction;
-        }
+        },
       }
-      return
-    }
+    });
 
-    var z = window.matchMedia("(min-width: 1400px)")
-    zzz(z) // Call listener function at run time
-    z.addListener(zzz) // Attach listener function on state changes
+
+
 
 
   </script>

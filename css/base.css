@@ -1034,6 +1034,7 @@ ul li:first-child a p {
 
 .col-ad-mobile {
     padding: 0px 30px !important;
+    position: relative;
 }
 
 .card-wrapper,
@@ -2002,7 +2003,7 @@ ul li:first-child a p {
         justify-content: center;
     }
 
-    .col-ad {
+    .col-ad-mobile {
         padding: 0px 60px !important;
     }
 
@@ -2598,7 +2599,7 @@ ul li:first-child a p {
         padding: 0px 150px;
     }
 
-    .col-ad {
+    .col-ad-mobile {
         padding: 0px 140px !important;
     }
 
